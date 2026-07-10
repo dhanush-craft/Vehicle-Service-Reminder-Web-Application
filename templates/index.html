@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>service day</title>
+{% endblock %} 
+
+{% block body %}
+<h1>Service day finder !!!</h1>
+
+<form method="POST">
+    <input id="dateof" name="dateof" type="date" placeholder="   " required>
+    <input id="dayz" name="dayz" type="number" placeholder="number of days" required>
+
+    <button>submit</button>
+</form>
+
+<table border="1">
+<tr>
+    <th>bike bought date</th>
+    <th>service day from</th>
+    <th>service date</th>
+    <th>Calender Link</th>
+
+</tr>
+
+<tr>
+    <td>{{dateof}}</td>
+    <td>{{dayz}}</td>
+    <td>{{enddate}}</td>
+    <td><a href={{link}}>🔗</a></td>
+
+</tr>
+
+</table>
+
+{% endblock %} 
