@@ -15,7 +15,7 @@ def index ():
             date = datetime.strptime(dateof,"%Y-%m-%d")
             dayz=int(request.form.get('dayz'))
             enddate = (date + timedelta(days=dayz)).date()
-            clink=enddate
+            clink = enddate.strftime("%Y%m%d")
 
             params = {
                 "action":"TEMPLATE",
