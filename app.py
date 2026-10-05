@@ -19,7 +19,7 @@ def index ():
 
             params = {
                 "action":"TEMPLATE",
-                "text":"My Event",
+                "text":"Vehicle-Service-Reminder",
                 "dates": f"{clink}/{clink}"
             }
             link = "https://calendar.google.com/calendar/render?" + urlencode(params)
